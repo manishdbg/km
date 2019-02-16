@@ -1,0 +1,115 @@
+html, body {
+    height: 100%;
+    color: #fff;
+}
+body, p {
+    margin: 0;
+    padding: 0;
+}
+
+#wrap {
+    min-height: 100%;
+    height: auto ;
+    height: 100%;
+    overflow: auto;
+    background: #888;
+}
+
+#header {
+    height: 30px;
+    background: #222;
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+}
+
+#SC-wrap {
+    float: left;
+    margin-bottom: 40px;
+}
+
+
+/* BEGIN HEADER NAV */
+#nav {    
+    padding-left: 5%;
+    padding-right:5%;
+    
+}
+ #nav li{
+    position: relative;
+    display: inline;
+    color: black;
+}
+#nav a {
+    display: inline-block;
+    padding:10px;
+}
+#nav ul {
+    position: absolute;
+    /*top:100%; Uncommenting this makes the dropdowns work in IE7 but looks a little worse in all other browsers. Your call. */
+    left:-9999px;
+    margin:0;
+    padding:0;
+    text-align: left;
+    text-decoration: none;    
+}
+#nav ul li {
+    display: block;    
+}
+#nav li:hover ul {
+    left:0;
+}
+#nav li:hover a {
+    text-decoration: none;
+    background: darkgrey;
+}
+#nav li:hover ul a {
+    text-decoration: none;
+    background: #B8B8B8;
+}
+#nav li:hover ul a:hover{
+    text-decoration: none;
+    background: #CCCCCC; 
+}
+#nav ul a{
+    white-space: nowrap;
+    display: block;
+    border-bottom:1px solid #ccc;
+    color: white;
+    text-decoration: none;
+}
+#nav a {
+    text-decoration:none;    
+    color: white;
+}
+#nav a:hover {
+    text-decoration:none;
+    background: #f1f1f1;
+    color: blue;
+}
+/* END HEADER NAV */
+
+
+
+
+#content {
+    /*float: left;*/    
+    /*padding-right: 250px;*/
+    width: 100%;
+    padding-top: 15px;    
+    font-size: 1.2em;
+    line-height: 1.6em;
+    z-index: 1;
+    text-align: left;
+ /*   padding-left: 15px;   */
+    color: black
+}
+
+#footer {
+    position: fixed;
+    bottom: 0px;
+    height: 40px;
+    width: 100%;
+    background: #222;
+    z-index: 4;
+}
